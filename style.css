@@ -28,7 +28,7 @@ body{
 body.dark{
     --body-color: #18191A;
     --nav-color: #6d859017;
-    --side-nav:#6d859017 ;
+    --side-nav:##242526;
     --text-color: #CCC;
     --search-bar: #242526;
 }
