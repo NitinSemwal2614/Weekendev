@@ -44,4 +44,21 @@ body.addEventListener("click" , e =>{
 });
 
 
+// Add this script to your existing script.js file or create a new one
+
+document.addEventListener("DOMContentLoaded", function () {
+  const nav = document.querySelector('nav');
+
+  window.addEventListener('scroll', function () {
+      if (window.scrollY > 70) { // Adjust the value based on when you want the navbar to become sticky
+          nav.classList.add('sticky');
+          document.body.classList.add('scrolling');
+      } else {
+          nav.classList.remove('sticky');
+          document.body.classList.remove('scrolling');
+      }
+  });
+});
+
+
 //------------------------------------------------- NAVBAR COMPLETED ----------------------------------------------------------------------------------
