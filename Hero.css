@@ -130,3 +130,28 @@ body.dark .explore-button {
     }
 }
 
+/* ------------------ */
+/* ... (your existing CSS styles) ... */
+
+/* Mobile view image styling */
+.mobile-view-image {
+    display: none; /* Initially hide the image on larger screens */
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* ... (your existing responsive styles) ... */
+
+    /* Adjustments for mobile view */
+    .mobile-view-image {
+        display: block; /* Show the mobile image on smaller screens */
+        width: 100%; /* Make it fill the container */
+        height: auto;
+        margin-top: 20px; /* Adjust spacing as needed */
+    }
+
+    /* Hide the laptop view image on smaller screens */
+    .right-section .hero-image {
+        display: none;
+    }
+}
