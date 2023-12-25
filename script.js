@@ -89,19 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
         slider.style.backgroundImage = `url(${slides[initialIndex].getAttribute('data-bg-image')})`;
     }
 });
-document.addEventListener('DOMContentLoaded', function () {
-    const slider = document.querySelector('.slider');
-    const slides = document.querySelectorAll('.slider__contents');
-
-    document.querySelectorAll('.slider__nav').forEach(function (nav, index) {
-        nav.addEventListener('change', function () {
-            slider.style.backgroundImage = `url(${slides[index].getAttribute('data-bg-image')})`;
-        });
-    });
-
-})
-
-
 
 
 
@@ -115,24 +102,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Get all paragraphs with the class 'hover-paragraph'
-    const hoverParagraphs = document.querySelectorAll('.hover-paragraph');
+    document.querySelectorAll('.hover-paragraph').forEach(function (hoverParagraph) {
+        const iconWrapper = document.createElement('div');
+        iconWrapper.classList.add('icon-wrapper');
 
-    hoverParagraphs.forEach(function (paragraph) {
-        paragraph.addEventListener('mouseover', function () {
-            // Add icons to the paragraph on hover
-            paragraph.innerHTML += '<div class="icon-wrapper">' +
-                '<a href="https://example.com" target="_blank"><i class="fa fa-external-link"></i></a>' +
-                '<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>' +
-                '</div>';
+        // Add icons to the paragraph
+        iconWrapper.innerHTML = '<a href="https://example.com" target="_blank"><i class="fa fa-external-link"></i></a>' +
+            '<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>';
 
-            // Set a delay before removing the icons (e.g., 2000 milliseconds = 2 seconds)
-           
-            hoverParagraphs.addEventListener('mouseout', function () {
-                hoverTimeout = setTimeout(function () {
-                    iconWrapper.style.display = 'none';
-                }, 300); // Adjust the delay (in milliseconds) as needed
-            });
+        hoverParagraph.appendChild(iconWrapper);
+
+        let hoverTimeout;
+
+        // Show icons on hover
+        hoverParagraph.addEventListener('mouseover', function () {
+            clearTimeout(hoverTimeout);
+            iconWrapper.style.display = 'flex';
+        });
+
+        // Hide icons after a delay when not hovering
+        hoverParagraph.addEventListener('mouseout', function () {
+            hoverTimeout = setTimeout(function () {
+                iconWrapper.style.display = 'none';
+            }, 300); // Adjust the delay (in milliseconds) as needed
         });
     });
 });
