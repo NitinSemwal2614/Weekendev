@@ -62,3 +62,77 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 //------------------------------------------------- NAVBAR COMPLETED ----------------------------------------------------------------------------------
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider__contents');
+    const radioButtons = document.querySelectorAll('.slider__nav');
+
+    // Set initial background image
+    setInitialBackground();
+
+    // Add event listener to each radio button
+    radioButtons.forEach(function (nav, index) {
+        nav.addEventListener('change', function () {
+            // Change background image based on the selected slide
+            slider.style.backgroundImage = `url(${slides[index].getAttribute('data-bg-image')})`;
+        });
+    });
+
+    // Function to set initial background image
+    function setInitialBackground() {
+        const checkedRadio = document.querySelector('.slider__nav:checked');
+        const initialIndex = Array.from(radioButtons).indexOf(checkedRadio);
+        slider.style.backgroundImage = `url(${slides[initialIndex].getAttribute('data-bg-image')})`;
+    }
+});
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider__contents');
+
+    document.querySelectorAll('.slider__nav').forEach(function (nav, index) {
+        nav.addEventListener('change', function () {
+            slider.style.backgroundImage = `url(${slides[index].getAttribute('data-bg-image')})`;
+        });
+    });
+
+})
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const slider = document.querySelector('.slider');
+    const slides = document.querySelectorAll('.slider__contents');
+
+    document.querySelectorAll('.slider__nav').forEach(function (nav, index) {
+        nav.addEventListener('change', function () {
+            slider.style.backgroundImage = `url(${slides[index].getAttribute('data-bg-image')})`;
+        });
+    });
+
+    // Get all paragraphs with the class 'hover-paragraph'
+    const hoverParagraphs = document.querySelectorAll('.hover-paragraph');
+
+    hoverParagraphs.forEach(function (paragraph) {
+        paragraph.addEventListener('mouseover', function () {
+            // Add icons to the paragraph on hover
+            paragraph.innerHTML += '<div class="icon-wrapper">' +
+                '<a href="https://example.com" target="_blank"><i class="fa fa-external-link"></i></a>' +
+                '<a href="https://github.com" target="_blank"><i class="fa fa-github"></i></a>' +
+                '</div>';
+
+            // Set a delay before removing the icons (e.g., 2000 milliseconds = 2 seconds)
+           
+            hoverParagraphs.addEventListener('mouseout', function () {
+                hoverTimeout = setTimeout(function () {
+                    iconWrapper.style.display = 'none';
+                }, 300); // Adjust the delay (in milliseconds) as needed
+            });
+        });
+    });
+});
