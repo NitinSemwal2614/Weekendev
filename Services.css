@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  
+  .section-heading {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-color); /* Use the text color variable */
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 90%;
+    height: 275px;
+    padding: 2em 1.5em;
+    background: linear-gradient(var(--body-color) 50%, var(--nav-color) 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .icon-wrapper {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--nav-color);
+    font-size: 30px;
+    height: 2.5em;
+    margin-top: 15px;
+    width: 2.5em;
+    color: var(--body-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 3em 0 1em;
+  }
+  
+  .card:hover {
+    background-position: 0 100%;
+    background-color: var(--nav-color);
+  }
+  
+  .card:hover .icon-wrapper {
+    background-color: var(--body-color); 
+    color: var(--nav-color);
+  }
+  
+  .card:hover h3 {
+    color: var(--body-color);
+  }
+  .card h3 {
+    color: #000000;
+  }
+  .card:hover p {
+    color: var(--body-color);
+  }
+  
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+
+
+
+  
