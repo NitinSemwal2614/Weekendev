@@ -1,0 +1,113 @@
+.cta-section {
+    height: 250px;
+    /* background: linear-gradient(to right, #3498db, #6c5ce7); */
+    background: rgb(0,70,94);
+background: radial-gradient(circle, rgba(0,70,94,1) 46%, rgba(0,0,0,1) 86%);
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.cta-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.counting-section {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.count {
+    font-size: 2em;
+    font-weight: bold;
+    color: #fcfcfc;
+    animation: counting 2s ease-out;
+}
+
+.count-label {
+    display: block;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.cta-button {
+    background:  url('https://www.pexels.com/photo/google-search-engine-on-macbook-pro-40185/');
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    /* background-color: transparent; */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+    background-color: #fff;
+    color: #333;
+}
+
+@keyframes counting {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media screen and (max-width: 768px) {
+    .cta-section {
+        height: auto;
+        padding: 20px ; /* Adjust padding for better spacing on smaller screens */
+    }
+
+    h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+
+    .cta-subtitle {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .count {
+        font-size: 1.5em;
+    }
+
+    .count-label {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+        padding: 12px 24px;
+    }
+}
+
+.dark .cta-section {
+    background: rgb(109,133,144);
+background: radial-gradient(circle, rgba(109,133,144,1) 0%, rgba(24,25,26,1) 23%, rgba(24,25,26,0.8380602240896359) 90%);
+}
