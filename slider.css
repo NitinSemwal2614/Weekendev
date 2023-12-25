@@ -6,7 +6,10 @@
   margin:auto;
   margin-top:5%;
   margin-bottom: 5%;
-  
+  border: 2px solid #8f8989; /* Add a border with 2px width and black color */
+    box-sizing: border-box; /* Include the border in the total width/height */
+    /* ... (other styles for the slider) */
+    
     position: relative;
     overflow: hidden;
     display: -webkit-box;
