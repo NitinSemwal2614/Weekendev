@@ -14,8 +14,12 @@
     <link rel="stylesheet" href="slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"rel="stylesheet"/>
     <link rel="stylesheet" href="Services.css">
+    <link rel="stylesheet" href="testi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="contact.css">
     <!-- ===== Boxicons CSS ===== -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
 
      <title>Weekendev</title>
 </head>
@@ -112,7 +116,7 @@
         </div>
     </div>
 
-    <!-- ---------------------------------------------CTA SECTION---------------------------------------------------------- -->
+   
 <!-- ---------------------------------------------CTA SECTION---------------------------------------------------------- -->
 
 <section class="cta-section">
@@ -168,7 +172,7 @@
     
 <!-- -------------------------------------------------SERVICES FOR PROJECTS ---------------------------------------------------------- -->
     
-<section>
+<section class="services-sec">
     <div class="row">
       <h1 class="section-heading">Our Services</h1>
     </div>
@@ -210,7 +214,77 @@
     </div>
   </section>
  
+<!-- ------------------------------------------------------------testimonial started----------------------------------------- -->
 
+<section class="testimonial-section">
+  <div  class="testi-text"><h2>What Our Client Think About Us</h2></div>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="User 1" class="testimonial-img">
+      <h3>Teresa May</h3>
+      <p>Founder at ET Company</p>
+      <div class="testimonial-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat
+        ad velit ab hic tenetur.</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(15).webp" alt="User 2" class="testimonial-img">
+      <h3>Maggie McLoan</h3>
+      <p>Photographer at Studio LA</p>
+      <div class="testimonial-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <p>Autem, totam debitis suscipit saepe sapiente magnam officiis quaerat necessitatibus odio assumenda
+        perferendis labore laboriosam.</p>
+    </div>
+
+    <div class="testimonial-card">
+      <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(17).webp" alt="User 3" class="testimonial-img">
+      <h3>Alexa Horwitz</h3>
+      <p>Front-end Developer in NY</p>
+      <div class="testimonial-rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="far fa-star"></i>
+      </div>
+      <p>Cras sit amet nibh libero, in gravida nulla metus scelerisque ante sollicitudin commodo cras purus odio,
+        vestibulum in tempus viverra turpis.</p>
+    </div>
+  </div>
+</section>
+<!-- ------------------------------------------------------------Contact us started--------------------------------- -->
+<section class="contact-section">
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us.</p>
+    <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</section>
+<script src="app.js"></script>
     <script src="script.js"></script>
     <script src="CTA.js"></script>
 </body>
