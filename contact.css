@@ -1,63 +1,77 @@
-.contact-section {
-  padding: 50px 0;
+.Contact {
+  color: white;
+  padding: 50px 0; /* Adjusted padding for better mobile experience */
   text-align: center;
 }
 
-.contact-section .contact-container {
-  max-width: 600px;
+.Contact h5 {
+  font-size: 24px; /* Adjusted font size for mobile view */
+  margin-bottom: 20px; /* Adjusted margin for better spacing */
+}
+
+.Contact_Form {
+  max-width: 80%; /* Adjusted max-width for better mobile experience */
   margin: 0 auto;
 }
 
-.contact-section h2 {
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff; /* Change color as needed */
-  margin-bottom: 20px;
+.Contact_Form label {
+  font-size: 16px; /* Adjusted font size for mobile view */
+  margin-bottom: 5px;
 }
 
-.contact-section p {
-  color: #fff; /* Change color as needed */
-  margin-bottom: 30px;
-}
-
-.contact-section form {
-  display: grid;
-  gap: 15px;
-}
-
-.contact-section label {
-  display: block;
-  font-weight: 600;
-  color: #fff; /* Change color as needed */
-}
-
-.contact-section input,
-.contact-section textarea {
+.Contact_Form input,
+.Contact_Form select,
+.Contact_Form textarea {
   width: 100%;
   padding: 10px;
-  box-sizing: border-box;
-  border: 1px solid #ccc; /* Change border color as needed */
+  margin-bottom: 15px;
+  border: 1px solid white;
   border-radius: 5px;
-  color: #fff; /* Change color as needed */
-  background-color: #333; /* Change background color as needed */
+  background-color: transparent;
+  color: white;
+  transition: border-color 0.3s;
 }
 
-.contact-section button {
-  background-color: #3498db; /* Change color as needed */
-  color: #fff;
+.Contact_Form textarea {
+  resize: vertical;
+}
+
+.Contact_Form button {
   padding: 10px 20px;
-  border: none;
+  font-size: 16px; /* Adjusted font size for mobile view */
+  background-color: transparent;
+  border: 2px solid white;
   border-radius: 5px;
+  color: rgb(255, 255, 255);
   cursor: pointer;
-  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.contact-section button:hover {
-  background-color: #007bb5; /* Change color as needed */
+.Contact #messageType {
+  background-color:transparent;
+  color:white;
+  border-color:white;
+}
+
+.Contact_Form button:hover {
+  background-color: white;
+  color:  #333;
+  border-color: none;
+}
+
+.Contact_Form input:focus,
+.Contact_Form select:focus,
+.Contact_Form textarea:focus {
+  outline: none;
+  border-color: #00465E;
 }
 
 @media screen and (max-width: 600px) {
-  .contact-section .contact-container {
-      padding: 0 20px;
+  .Contact h5 {
+    font-size: 20px; /* Further adjusted font size for smaller screens */
+  }
+
+  .Contact_Form {
+    max-width: 90%; /* Adjusted max-width for smaller screens */
   }
 }

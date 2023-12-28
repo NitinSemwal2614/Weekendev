@@ -1,5 +1,5 @@
 .testimonial-section {
-  padding: 50px 0;
+  padding: 50px 15px; /* Adjust side margins for mobile view */
   text-align: center;
 }
 
@@ -23,6 +23,7 @@
   border-radius: 8px;
   transition: box-shadow 0.3s ease;
   flex: 1;
+  margin: 0 15px; /* Adjust side margins for mobile view */
 }
 
 .testimonial-section .testimonial-card:hover {
@@ -43,7 +44,7 @@
 
 @media (max-width: 768px) {
   .testimonial-section .testimonial-card {
-      flex: 1 0 100%;
+      flex: 1 0 calc(100% - 30px); /* Adjust side margins for mobile view */
       margin-bottom: 20px;
   }
 }

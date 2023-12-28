@@ -78,10 +78,6 @@
     color: #fff; /* Change color as needed */
 }
 
-.services-sec .card:hover p {
-    color: #fff;
-}
-
 @media screen and (min-width: 768px) {
     .services-sec .column {
         flex: 0 50%;
@@ -96,10 +92,14 @@
     }
 }
 
+/* Center for mobile views only */
 @media screen and (max-width: 600px) {
     .services-sec .row {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        margin-right:19px;
+
     }
 
     .services-sec .column {
