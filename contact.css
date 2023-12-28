@@ -1,22 +1,25 @@
+/* Add this to your existing CSS file */
+
 .Contact {
   color: white;
-  padding: 50px 0; /* Adjusted padding for better mobile experience */
+  padding: 50px 0;
   text-align: center;
 }
 
 .Contact h5 {
-  font-size: 24px; /* Adjusted font size for mobile view */
-  margin-bottom: 20px; /* Adjusted margin for better spacing */
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .Contact_Form {
-  max-width: 80%; /* Adjusted max-width for better mobile experience */
+  max-width: 50%;
   margin: 0 auto;
 }
 
-.Contact_Form label {
-  font-size: 16px; /* Adjusted font size for mobile view */
-  margin-bottom: 5px;
+.Contact_Form label,
+.Contact_Form select,
+.Contact_Form textarea {
+  font-size: 14px;
 }
 
 .Contact_Form input,
@@ -37,8 +40,8 @@
 }
 
 .Contact_Form button {
-  padding: 10px 20px;
-  font-size: 16px; /* Adjusted font size for mobile view */
+  padding: 8px 15px;
+  font-size: 14px;
   background-color: transparent;
   border: 2px solid white;
   border-radius: 5px;
@@ -47,15 +50,20 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-.Contact #messageType {
-  background-color:transparent;
-  color:white;
-  border-color:white;
+.Contact_Form select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+.Contact_Form select option {
+  background-color: #333;
+  color: white;
 }
 
 .Contact_Form button:hover {
   background-color: white;
-  color:  #333;
+  color: #333;
   border-color: none;
 }
 
@@ -68,10 +76,10 @@
 
 @media screen and (max-width: 600px) {
   .Contact h5 {
-    font-size: 20px; /* Further adjusted font size for smaller screens */
+    font-size: 20px;
   }
 
   .Contact_Form {
-    max-width: 90%; /* Adjusted max-width for smaller screens */
+    max-width: 90%;
   }
 }

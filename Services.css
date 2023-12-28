@@ -41,7 +41,7 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    background-color: #3498db; /* Change color as needed */
+    background-color: #00465E; /* Change color as needed */
     font-size: 30px;
     height: 2.5em;
     margin-top: 15px;
@@ -54,6 +54,7 @@
     transition: 0.5s;
 }
 
+
 .services-sec h3 {
     font-size: 20px;
     font-weight: 600;
@@ -62,7 +63,7 @@
 }
 
 .services-sec .card:hover {
-    background-color: #3498db; /* Change color as needed */
+    background-color: #00465E; /* Change color as needed */
 }
 
 .services-sec .card:hover .icon-wrapper {
@@ -75,7 +76,25 @@
 }
 
 .services-sec .card h3 {
-    color: #fff; /* Change color as needed */
+    color: var(--nav-color);
+}
+body.dark.services-sec .card h3 {
+    color: #000000;
+}
+
+.services-sec .card p {
+    color: black;
+}
+
+.services-sec .card:hover p {
+    color: #ffffff;
+}
+
+body.dark.services-sec .card p {
+    color: black;
+}
+body.dark.services-sec .card:hover p {
+    color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -107,3 +126,19 @@
         margin: 10px;
     }
 }
+
+.services-sec .card h3.Card-headings {
+    font-weight: 600;
+    color: var(--nav-color); 
+}
+
+.services-sec .card:hover h3.Card-headings {
+    color: #ffffff; /* Change color on hover */
+}
+
+
+body.dark.services-sec .card h3.Card-headings {
+    /* font-weight: 900; */
+    color: black; 
+}
+
