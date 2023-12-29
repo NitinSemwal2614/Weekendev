@@ -267,39 +267,58 @@
 <!-- ------------------------------------------------------------Contact us started--------------------------------- -->
 <section class="Contact slow-scroll" id="Contact">
   <div class="outer-cover">
-  <h2>Get in Touch</h2>
+    <h2>Get in Touch</h2>
   
-      <div class="Contact_Form">
-           <form action="#" >
-               <div class="form-group">
-                   <label for="name">Name</label>
-                  <input type="text" id="name" name="name" required>
-              </div>
-               <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required>
-               </div>
-              <div class="form-group">
-                  <label for="messageType">Message Type</label>
-                  <select id="messageType" name="messageType" required>
-                      <option value="general">General Inquiry</option>
-                      <option value="general">Collaborations</option>
-                      <option value="general">Project Deals </option>
-                      <option value="feedback">Feedback</option>
-                      <option value="question">Question</option>
-                      <option value="question">Others</option>
-                 
-                  </select>
-              </div>
-              <div class="form-group">
-                  <label for="message">Message</label>
-                  <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-              <button type="submit">Send Message 🚀</button>
-          </form>
-      </div>
+    <div class="Contact_Form">
+      <form action="https://formspree.io/f/mbjnjraw" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Your email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="messageType">Message Type:</label>
+          <select id="messageType" name="messageType" required>
+            <option value="general">General Inquiry</option>
+            <option value="collaborations">Collaborations</option>
+            <option value="projectDeals">Project Deals</option>
+            <option value="feedback">Feedback</option>
+            <option value="question">Question</option>
+            <option value="others">Others</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Your message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+      </form>
+    </div>
   </div>
 </section>
+
+
+
+<!-- 
+<form
+  action="https://formspree.io/f/mbjnjraw"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form> -->
     <script src="navbar-smooth-scroll.js" defer></script>
     <script src="sidebar-smooth-scroll.js" defer></script>
     <script src="script.js"></script>
