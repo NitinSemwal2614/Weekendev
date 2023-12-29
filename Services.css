@@ -2,11 +2,32 @@
     padding: 50px 0;
     text-align: center;
 }
+body.dark {
+    background-color: #000000;
+}
+body.dark .services-sec {
+    background-color: black;
+}
 
+body.dark .services-sec .section-heading,
+body.dark .services-sec h3,
+body.dark .services-sec .card p {
+    color: rgb(255, 255, 255);
+}
+
+body.dark .services-sec .card {
+    background-color: #000;
+    box-shadow: 0 0 35px rgba(92, 86, 86, 0.264);
+}
+
+body.dark .services-sec .card:hover .icon-wrapper {
+    background-color: #000; /* Adjust icon background color on hover for dark mode */
+    color: #fff;
+}
 .services-sec .section-heading {
     font-size: 36px;
     font-weight: 700;
-    color: #fff; /* Change color as needed */
+    color: #fff; 
     margin-bottom: 30px;
 }
 
@@ -78,9 +99,6 @@
 .services-sec .card h3 {
     color: var(--nav-color);
 }
-body.dark.services-sec .card h3 {
-    color: #000000;
-}
 
 .services-sec .card p {
     color: black;
@@ -90,12 +108,6 @@ body.dark.services-sec .card h3 {
     color: #ffffff;
 }
 
-body.dark.services-sec .card p {
-    color: black;
-}
-body.dark.services-sec .card:hover p {
-    color: white;
-}
 
 @media screen and (min-width: 768px) {
     .services-sec .column {
@@ -132,13 +144,12 @@ body.dark.services-sec .card:hover p {
     color: var(--nav-color); 
 }
 
-.services-sec .card:hover h3.Card-headings {
+.services-sec .card h3.Card-headings {
     color: #ffffff; /* Change color on hover */
 }
 
 
-body.dark.services-sec .card h3.Card-headings {
-    /* font-weight: 900; */
+/* body.dark.services-sec .card h3.Card-headings {
     color: black; 
-}
+} */
 

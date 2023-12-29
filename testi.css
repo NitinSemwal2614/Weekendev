@@ -3,6 +3,9 @@
   text-align: center;
 }
 
+.dark.testimonial-section{
+  background-color: black; 
+}
 .testimonial-section .testi-text {
   color: #fff; /* Change color as needed */
 }
@@ -44,7 +47,7 @@
 
 @media (max-width: 768px) {
   .testimonial-section .testimonial-card {
-      flex: 1 0 calc(100% - 30px); /* Adjust side margins for mobile view */
-      margin-bottom: 20px;
+    flex: 1 0 calc(100% - 30px); /* Adjust side margins for mobile view */
+    margin-bottom: 20px;
   }
 }

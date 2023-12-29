@@ -12,10 +12,14 @@
   padding: 40px 20px;
 }
 
+.dark .About-Section {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 23%, rgba(0, 0, 0, 0.838) 90%);
+}
 /* Light mode */
 .heading-div {
   width: 100%;
-  background-color: var(--nav-color);
+  background: color #000; ;
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;

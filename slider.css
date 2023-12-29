@@ -2,13 +2,13 @@
 .slider {
   border-radius: 4%;
   height: 80%;
+  background-color: #000;
   width: 1200px;
   margin:auto;
   margin-top:5%;
   margin-bottom: 5%;
-  border: 2px solid #8f8989; /* Add a border with 2px width and black color */
-    box-sizing: border-box; /* Include the border in the total width/height */
-    /* ... (other styles for the slider) */
+  border: 2px solid #8f8989;
+  box-sizing: border-box; 
     
     position: relative;
     overflow: hidden;
@@ -109,7 +109,7 @@
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: rgba(9, 9, 9, 0.66);
+    background: rgba(9, 9, 9, 0.86);
   }
   
   .slider__image {
@@ -218,7 +218,7 @@
   
   .hover-paragraph:hover .icon-wrapper {
     display: flex;
-      display: inline-block;
+    display: inline-block;
   }
 
   

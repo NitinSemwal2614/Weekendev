@@ -6,7 +6,10 @@
     background-color: var(--nav-color); /* Set the background color for dark mode */
     color: var(--text-color); /* Set the text color for dark mode */
 }
-
+.dark .hero-section {
+    background: rgb(0, 0, 0);
+    background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 23%, rgba(0, 0, 0, 0.838) 90%);
+   }
 /* Left Section */
 .left-section {
     flex: 1;

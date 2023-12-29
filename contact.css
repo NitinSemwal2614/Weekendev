@@ -2,6 +2,7 @@
 
 .Contact {
   color: white;
+  /* background-color: #000; */
   padding: 50px 0;
   text-align: center;
 }
@@ -58,7 +59,7 @@
 
 .Contact_Form select option {
   background-color: #333;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .Contact_Form button:hover {
@@ -71,7 +72,7 @@
 .Contact_Form select:focus,
 .Contact_Form textarea:focus {
   outline: none;
-  border-color: #00465E;
+  border-color:#000000
 }
 
 @media screen and (max-width: 600px) {
@@ -87,5 +88,4 @@
 .outer-cover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
-  background-color: #00475e8c;
 }
