@@ -130,3 +130,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var video = document.querySelector('video');
+    if (video) {
+        video.src = 'WhyUs.webm'; // Set the video source dynamically
+    }
+});
