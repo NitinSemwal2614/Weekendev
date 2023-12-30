@@ -1,0 +1,349 @@
+
+.pg-footer {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  
+  .footer {
+      color: #fff;
+  }
+
+  .footer-wave-svg {
+      background-color: transparent;
+      display: block;
+      height: 30px;
+      position: relative;
+      top: -1px;
+      width: 100%;
+  }
+  .footer-wave-path {
+      fill: #fffff2;
+  }
+  
+  .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 450px;
+      position: relative;
+  }
+  
+  .footer-content-column {
+      box-sizing: border-box;
+      float: left;
+      padding-left: 15px;
+      padding-right: 15px;
+      width: 100%;
+      color: #fff;
+  }
+  
+  .footer-content-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-logo-link {
+      display: inline-block;
+  }
+  .footer-menu {
+      margin-top: 30px;
+  }
+  
+  .footer-menu-name {
+      color: #fffff2;
+      font-size: 15px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-menu-list {
+      list-style: none;
+      margin-bottom: 0;
+      margin-top: 10px;
+      padding-left: 0;
+  }
+  .footer-menu-list li {
+      margin-top: 5px;
+  }
+  
+  .footer-call-to-action-description {
+      color: #fffff2;
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }
+  .footer-call-to-action-button:hover {
+      background-color: #fffff2;
+      color: #00465E;
+  }
+
+  
+  .button:last-of-type {
+      margin-right: 0;
+  }
+  .footer-call-to-action-button {
+      border-radius: 21px;
+      color: #fffff2;
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      padding: 12px 30px;
+      margin: 0 10px 10px 0;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: background-color .2s;
+      cursor: pointer;
+      position: relative;
+  }
+  
+  .footer-call-to-action {
+      margin-top: 30px;
+  }
+  .footer-call-to-action-title {
+      color: #fffff2;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: .1em;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+      text-transform: uppercase;
+  }
+  .footer-call-to-action-link-wrapper {
+      margin-bottom: 0;
+      margin-top: 10px;
+      color: #fff;
+      text-decoration: none;
+  }
+  .footer-call-to-action-link-wrapper a {
+      color: #fff;
+      text-decoration: none;
+  }
+  
+  
+ 
+  
+  .hidden-link-text {
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px,1px,1px,1px);
+      -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+      clip-path: inset(0px 0px 99.9% 99.9%);
+      overflow: hidden;
+      height: 1px;
+      width: 1px;
+      padding: 0;
+      border: 0;
+      top: 50%;
+  }
+  
+ 
+  .footer-social-icon-path {
+      fill: #fffff2;
+      transition: fill .2s;
+  }
+
+  
+  .footer-copyright {
+      color: #fff;
+      padding: 0px 30px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-right: 10%;
+
+    
+  }
+ 
+  
+  .footer-copyright-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1200px;
+      text-align: center;
+  }
+  
+  .footer-copyright-text {
+    color: #fff;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+      margin-bottom: 0;
+      margin-top: 0;
+  }
+  
+  .footer-copyright-link {
+      color: #fff;
+      text-decoration: none;
+  }
+ 
+  .footer-social {
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 200%;
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+    margin-left: 35px;
+    display: flex;
+    justify-content:center; /* Spread out the icons */
+}
+
+.footer-social-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 3px ;
+}
+
+.footer-social-link i {
+    transition: color 0.2s;
+}
+
+.footer-social-link:hover i {
+    color: #010718; /* Change to the desired hover color */
+}
+
+  
+.footer-newsletter-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+#emailInput {
+    padding: 10px;
+    flex: 1;
+    border: 1px solid #fff;
+    border-radius: 5px 0 0 5px;
+    color: #000; /* Change text color to black */
+}
+.dark#emailInput{
+    color: #fff;
+}
+.footer-newsletter-button {
+    background-color: #00465E;
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.footer-newsletter-button:hover {
+    background-color: #fff;
+    color: #00465E;
+}
+
+.footer-social .footer-menu-name {
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+}
+  
+  /* Media Query For different screens */
+  @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+      
+    }
+    .footer-social{
+        margin-left: auto;
+    }
+    .social-icons{
+        margin-left: auto;
+    }
+    
+
+}
+  @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+    .footer-content {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1230px;
+      padding: 40px 15px 1050px;
+      position: relative;
+    }
+  }
+  @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+  
+  }
+  @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+  
+  }
+  @media (min-width:1281px) { /* hi-res laptops and desktops */
+  
+  }
+  
+  
+  
+  
+  @media (min-width: 760px) {
+    .footer-content {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1230px;
+        padding: 40px 15px 450px;
+        position: relative;
+    }
+  
+    .footer-wave-svg {
+        height: 50px;
+    }
+  
+    .footer-content-column {
+        width: 24.99%;
+    }
+  }
+  @media (min-width: 568px) {
+    /* .footer-content-column {
+        width: 49.99%;
+    } */
+  }
+  
+
+  @media (max-width: 600px) {
+    .footer-social {
+        text-align: center;
+        margin-top: 20px; /* Adjust the top margin for better spacing */
+    }
+
+    .social-icons {
+        list-style: none;
+        padding: 0;
+        margin: 15px 0; /* Adjust the top and bottom margins for better spacing */
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-social-link {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        margin: 0 10px; /* Adjust spacing between icons */
+    }
+
+    .footer-copyright {
+        margin-top: 20px; /* Adjust the top margin to avoid overlapping */
+        padding: 15px 30px; /* Adjust padding */
+    }
+}
